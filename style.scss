@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+.background {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/background.jpg") center/cover no-repeat;
+}
+
+.main-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.main-nav__items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav__item {
+    margin-left: 3rem;
+    font-size: 2rem;
+
+    &:hover,
+    &:active {
+        transform: scale(1.1);
+        transition: transform 200ms;
+    }
+}
+
+
+.main-nav__logo {
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+        transform: scale(1.1);
+        transition: transform 200ms;
+    }
+}
+
+.main-nav__item a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.main-nav__item button{
+    font-family: inherit;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+@import "landing.scss";
+@import "contacts.scss";

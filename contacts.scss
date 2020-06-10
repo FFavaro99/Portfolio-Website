@@ -1,0 +1,43 @@
+
+
+.contacts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -10;
+    opacity: 0;
+}
+
+.contacts.open {
+    opacity: 100;
+    z-index: 50;
+    transition: opacity 350ms ease-in;
+}
+
+.contacts h1 {
+    font-weight: 400;
+    color: white;
+    font-size: 3.8rem;
+    margin-top: 7rem;
+}
+
+.contacts ul {
+    list-style: none;
+
+    li {
+        font-size: 2.7rem;
+        color: #fff;
+        margin-bottom: 2rem;
+        a {
+            text-decoration: none;
+            margin-left: 1rem;
+            color: inherit;
+        }
+    }
+}
+
